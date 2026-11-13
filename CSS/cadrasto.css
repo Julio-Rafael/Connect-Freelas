@@ -4,16 +4,19 @@ body {
   margin: 0;
 }
 
+
+
 .logo img{
     width: 180px;
     height: auto;
 }
 
+
 .campo{
   color: #2893c5;
   font-size: 16px;         
   font-family: inherit;    
-  padding: 10px;;    
+  padding: 10px;    
 }
 
 .termos a {

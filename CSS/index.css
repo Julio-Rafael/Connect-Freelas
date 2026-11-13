@@ -1,20 +1,129 @@
-/* logo */
+
+/*cor de fundo */
+body {
+  background-color: #050B12;
+  color: #B8C4D1;
+  margin: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cabecalho-pagina {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 48px 0 0;
+    background-color: #111C28;
+}
+
+/* barra de busca */
+.cabecalho-pagina > .logo {
+    flex: 1;
+}
+
+.Buscar {
+    flex: 0 1 700px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 16px;
+    height: 46px;
+    background-color: #0b1623;
+    border: 1px solid #1f2f42;
+    border-radius: 10px;
+    color: #B8C4D1;
+}
+
+/*Cor barra de buscar*/
+.Buscar:focus-within {
+    border-color: #1ea7ff;
+}
+
+.icone-busca {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.Buscar input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.Buscar input::placeholder {
+    color: #8696a8;
+}
+
+/* notificações e perfil (canto superior direito) */
+.acoes {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+}
+
+.acoes button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #e6edf5;
+    cursor: pointer;
+}
+
+.btn-notificacoes svg {
+    width: 26px;
+    height: 26px;
+}
+
+.btn-notificacoes:hover {
+    color: #1ea7ff;
+}
+
+.btn-perfil {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #1e90ff !important;
+    color: #fff !important;
+    overflow: hidden;
+}
+
+.btn-perfil svg {
+    width: 28px;
+    height: 28px;
+    margin-top: 6px;
+}
+.logo figure {
+    margin: 0;
+}
+
 .logo img {
-    width: 180px;
+    display: block;
+    width: 250px;
     height: auto;
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 
-/*cor de fundo */
-body {
-  background-color: #1e1e2f;
-  color: #050B12;
-  margin: 0;
-}
+
 
 /* banner*/
 .banner img {
@@ -22,3 +131,51 @@ body {
   height: auto;
 }
 
+.menu{
+    width: 280px;
+    height: 100vh;
+    background-color: #111C28;
+}
+
+/* itens do menu (mesmo padrão para todos) */
+.inicio-item,
+.explorar-item,
+.projetos-item,
+.mensagem-item,
+.favoritos-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.icone-inicio,
+.icon-explorar,
+.icon-projetos,
+.icon-mensagem,
+.icon-favoritos {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+nav ul hr {
+    margin: 0 20px;
+    border: none;
+    border-top: 1px solid #1f2f42;
+}
+
+nav ul li {
+    padding-left: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    line-height: 5;
+}
