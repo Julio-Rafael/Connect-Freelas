@@ -2,78 +2,125 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Meu Perfil Profissional | ConnectFreelas</title>
-    <link rel="stylesheet" href="../CSS/perfil.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectaFreelas - Meu perfil profissional</title>
+    <link rel="stylesheet" href="css/perfil.css">
 </head>
 <body>
 
-    <main class="perfil">
 
-    <h1>Meu Perfil Profissional</h1>
-    <p class="perfil-subtitulo">Gerencie suas informações, habilidades e portfólio para atrair mais oportunidades.</p>
+<header>
+    <div class="container">
+    <a href="index.html" class="logo">Conecta<span>Freelas</span></a>
+    <nav>
+        <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="vagas.html">Oportunidades</a></li>
+        <li><a href="publicar.html">Publicar projeto</a></li>
+        <li><a href="perfil.html" class="ativo">Perfil</a></li>
+        <li><a href="sobre.html">Sobre e contato</a></li>
+        <li><a href="cadastro.html" class="btn">Cadastrar</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
 
-    <section class="perfil-cartao perfil-capa">
-        <div class="perfil-foto">JR</div>
+<main>
 
-        <div class="perfil-capa-info">
-        <h2>Júlio Rafael</h2>
-        <p class="perfil-cargo">Desenvolvedor Web</p>
-        <p>📍 João Pessoa, PB</p>
-        <p><span class="perfil-bolinha"></span> Disponível para projetos</p>
+    <div class="cabecalho-pagina">
+    <div class="container perfil-topo">
+
+        <div class="avatar">JR</div>
+
+        <div class="perfil-dados">
+        <h1>Júlio Rafael</h1>
+        <p class="cargo">Desenvolvedor Web</p>
+        <p>João Pessoa, PB</p>
+        <p><span class="bolinha"></span> Disponível para projetos</p>
         </div>
 
-        <button class="perfil-botao">✏️ Editar Perfil</button>
-    </section>
+        <a href="#" class="btn-contorno">Editar Perfil</a>
+    </div>
+    </div>
 
-    <!-- Abas (somente visual, sem JavaScript) -->
-    <nav class="perfil-abas">
-        <a class="ativa" href="#">👤 Sobre</a>
-        <a href="#">📚 Habilidades</a>
-        <a href="#">📂 Portfólio</a>
-        <a href="#">💼 Experiências</a>
-        <a href="#">🏅 Certificações</a>
+
+    <nav class="abas">
+    <div class="container">
+        <ul>
+        <li><a href="#" class="ativa">Sobre</a></li>
+        <li><a href="#">Habilidades</a></li>
+        <li><a href="#">Portfólio</a></li>
+        <li><a href="#">Experiências</a></li>
+        <li><a href="#">Certificações</a></li>
+        </ul>
+    </div>
     </nav>
 
-    <!-- Grade com 2 colunas de cartões -->
-    <div class="perfil-grade">
 
-        <section class="perfil-cartao">
-        <h3>Descrição Profissional <span class="perfil-lapis">✏️</span></h3>
-        <p>Desenvolvedor Web com foco na criação de aplicações modernas, responsivas e funcionais. Tenho experiência com HTML, CSS, JavaScript e Python, buscando entregar soluções de qualidade e dentro do prazo.</p>
-        </section>
+    <section>
+    <div class="container detalhe">
 
-        <section class="perfil-cartao">
-        <h3>ℹ️ Informações Básicas <span class="perfil-lapis">✏️</span></h3>
-        <dl class="perfil-info">
-        <dt>✉️ E-mail</dt>          <dd>julio.rafael@email.com</dd>
-        <dt>📞 Telefone</dt>        <dd>(83) 9 9999-9999</dd>
-        <dt>💼 Área de atuação</dt> <dd>Desenvolvimento Web</dd>
-        <dt>📅 Experiência</dt>     <dd>1 a 2 anos</dd>
-        </dl>
-    </section>
 
-    <section class="perfil-cartao">
-        <h3>Habilidades <span class="perfil-lapis">✏️</span></h3>
-        <div class="perfil-tags">
-        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Python</span><span>Git</span>
-        <span>MySQL</span><span>Bootstrap</span><span>Linux</span><span>+</span>
+        <div class="coluna">
+        <div class="card">
+            <h2>Descrição Profissional <a href="#" class="editar">Editar</a></h2>
+            <p>Desenvolvedor Web com foco na criação de aplicações modernas, responsivas e funcionais. Tenho experiência com HTML, CSS, JavaScript e Python, buscando entregar soluções de qualidade e dentro do prazo.</p>
         </div>
-    </section>
 
-    <section class="perfil-cartao">
-        <h3>🔗 Links Profissionais <span class="perfil-lapis">✏️</span></h3>
-        <ul class="perfil-links">
-        <li><a href="#"><b>GitHub</b>    <span>github.com/Julio-Rafael</span>    ↗</a></li>
-        <li><a href="#"><b>LinkedIn</b>  <span>linkedin.com/in/juliorafael</span> ↗</a></li>
-        <li><a href="#"><b>Portfólio</b> <span>juliorafael.dev</span>            ↗</a></li>
-        </ul>
-    </section>
+        <div class="card">
+            <h2>Habilidades <a href="#" class="editar">Editar</a></h2>
+            <div class="habilidades">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">Git</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">Linux</span>
+            <span class="tag">+</span>
+            </div>
+        </div>
+        </div>
+
+        <div class="coluna">
+        <aside class="card resumo">
+            <h2>Informações Básicas <a href="#" class="editar">Editar</a></h2>
+            <dl>
+            <div><dt>E-mail</dt><dd>julio.rafael@email.com</dd></div>
+            <div><dt>Telefone</dt><dd>(83) 9 9999-9999</dd></div>
+            <div><dt>Área de atuação</dt><dd>Desenvolvimento Web</dd></div>
+            <div><dt>Experiência</dt><dd>1 a 2 anos</dd></div>
+            </dl>
+        </aside>
+
+        <div class="card">
+            <h2>Links Profissionais <a href="#" class="editar">Editar</a></h2>
+            <ul class="links">
+            <li><a href="#"><b>GitHub</b> <span>github.com/Julio-Rafael</span> Abrir</a></li>
+            <li><a href="#"><b>LinkedIn</b> <span>linkedin.com/in/juliorafael</span> Abrir</a></li>
+            <li><a href="#"><b>Portfólio</b> <span>juliorafael.dev</span> Abrir</a></li>
+            </ul>
+        </div>
+        </div>
 
     </div>
-    </main>
+    </section>
+</main>
 
+
+<footer>
+    <div class="container">
+    <nav>
+        <ul>
+        <li><a href="vagas.html">Oportunidades</a></li>
+        <li><a href="publicar.html">Publicar projeto</a></li>
+        <li><a href="sobre.html">Sobre e contato</a></li>
+        </ul>
+    </nav>
+    <p>&copy; 2026 ConectaFreelas. Projeto acadêmico de Desenvolvimento para Web.</p>
+    </div>
+</footer>
 
 </body>
 </html>
-
