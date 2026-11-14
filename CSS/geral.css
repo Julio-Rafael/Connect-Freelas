@@ -1,0 +1,174 @@
+/* estilos compartilhados entre as páginas: paleta + cabeçalho */
+
+:root {
+    /* Fundos */
+    --bg-primary: #F8FAFC;
+    --bg-secondary: #F1F5F9;
+    --bg-card: #FFFFFF;
+
+    /* Bordas */
+    --border-color: #E2E8F0;
+
+    /* Marca */
+    --primary: #2563EB;
+    --primary-hover: #1D4ED8;
+    --secondary: #0EA5E9;
+    --accent: #7C3AED;
+
+    /* Textos */
+    --text-primary: #0F172A;
+    --text-secondary: #64748B;
+
+    /* distância da borda: cresce com a tela (mín 16px, máx 96px) */
+    --margem: clamp(16px, 6vw, 96px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/* ---------- cabeçalho ---------- */
+header {
+    padding-left: var(--margem);
+    padding-right: var(--margem);
+    background-color: #000;
+    border-bottom: 1px solid #1E293B;
+}
+
+header .cabecalho-pagina {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+header .logo figure {
+    margin: 0;
+}
+
+header .logo img {
+    display: block;
+    width: 250px;
+    height: auto;
+}
+
+/* notificações e perfil (canto superior direito) */
+header .acoes {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+}
+
+header .acoes button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #E2E8F0;
+    cursor: pointer;
+}
+
+.btn-notificacoes svg {
+    width: 26px;
+    height: 26px;
+}
+
+.btn-notificacoes:hover {
+    color: var(--primary);
+}
+
+.btn-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.btn-perfil svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* menu deitado */
+header .barra-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 12px 0;
+}
+
+header nav ul hr {
+    height: 22px;
+    margin: 0 18px;
+    border: none;
+    border-left: 1px solid #1E293B;
+}
+
+header nav ul li {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    line-height: 1.5;
+}
+
+.inicio-item,
+.explorar-item,
+.projetos-item,
+.mensagem-item,
+.favoritos-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #E2E8F0;
+    text-decoration: none;
+}
+
+.inicio-item:hover,
+.explorar-item:hover,
+.projetos-item:hover,
+.mensagem-item:hover,
+.favoritos-item:hover {
+    color: var(--primary);
+}
+
+.icone-inicio,
+.icon-explorar,
+.icon-projetos,
+.icon-mensagem,
+.icon-favoritos {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+/* página atual no menu */
+header nav a.ativo {
+    color: #60A5FA;
+    font-weight: bold;
+    border-bottom: 3px solid var(--secondary);
+    padding-bottom: 4px;
+}

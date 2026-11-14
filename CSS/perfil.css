@@ -1,0 +1,267 @@
+/* estilos só da página de perfil (paleta e cabeçalho vêm do geral.css) */
+
+main {
+    padding: 24px var(--margem) 40px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1136px;
+    margin: 0 auto;
+}
+
+/* ---------- topo do perfil ---------- */
+.perfil-cabecalho {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+    border-top: 4px solid var(--primary);
+}
+
+.perfil-topo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+}
+
+.perfil-topo > svg {
+    width: 96px;
+    height: 96px;
+    flex-shrink: 0;
+}
+
+.perfil-dados h1 {
+    font-size: 26px;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.perfil-dados p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+.perfil-dados .cargo {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.bolinha {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #16A34A;
+    box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.2);
+}
+
+/* ---------- abas ---------- */
+.abas {
+    margin: 24px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.abas ul {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    overflow-x: auto;
+}
+
+.abas a {
+    display: block;
+    padding: 12px 16px;
+    color: var(--text-secondary);
+    font-size: 15px;
+    text-decoration: none;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -1px;
+}
+
+.abas a:hover {
+    color: var(--primary);
+}
+
+.abas a.ativa {
+    color: var(--primary);
+    font-weight: bold;
+    border-bottom-color: var(--primary);
+}
+
+/* ---------- conteúdo em duas colunas ---------- */
+.detalhe {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.card h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    color: var(--text-primary);
+    margin-bottom: 14px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.editar {
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.editar:hover {
+    text-decoration: underline;
+}
+
+/* habilidades */
+.habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    color: var(--primary-hover);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* informações básicas */
+.resumo dl div {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.resumo dl div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.resumo dt {
+    font-size: 12px;
+    color: var(--text-secondary);
+    margin-bottom: 2px;
+}
+
+.resumo dd {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+/* links profissionais */
+.links {
+    list-style: none;
+}
+
+.links li {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.links li:last-child {
+    border-bottom: none;
+}
+
+.links a {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 10px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.links a b {
+    color: var(--text-primary);
+}
+
+.links a span {
+    flex: 1;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.links a:hover {
+    color: var(--primary-hover);
+}
+
+/* ---------- rodapé ---------- */
+footer {
+    padding: 24px var(--margem);
+    background: #000;
+    color: #94A3B8;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+footer a {
+    color: #E2E8F0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #60A5FA;
+}
+
+/* ---------- telas pequenas ---------- */
+@media (max-width: 800px) {
+    .detalhe {
+        grid-template-columns: 1fr;
+    }
+
+    .perfil-topo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .perfil-dados p {
+        justify-content: center;
+    }
+}

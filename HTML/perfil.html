@@ -5,43 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConectaFreelas - Meu perfil profissional</title>
-    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="../CSS/geral.css">
+    <link rel="stylesheet" href="../CSS/perfil.css">
 </head>
 
 <body>
 
 
     <header>
-        <div class="container">
-            <a href="index.html" class="logo">Conecta<span>Freelas</span></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="vagas.html">Oportunidades</a></li>
-                    <li><a href="publicar.html">Publicar projeto</a></li>
-                    <li><a href="perfil.html" class="ativo">Perfil</a></li>
-                    <li><a href="sobre.html">Sobre e contato</a></li>
-                    <li><a href="cadastro.html" class="btn">Cadastrar</a></li>
-                </ul>
-            </nav>
+        <div class="cabecalho-pagina">
+            <div class="logo">
+                <figure>
+                    <img class="logo" src="../Imagems/Logo ConnectFreelas em Azul e Branco.png"
+                        alt="Logo ConnectFreelas">
+                </figure>
+            </div>
+
+
+
+            <div class="acoes">
+                <button type="button" class="btn-notificacoes" aria-label="Notificações">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                        <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                    </svg>
+                </button>
+
+                <a href="perfil.html" class="btn-perfil" aria-label="Perfil">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z" />
+                    </svg>
+                </a>
+            </div>
         </div>
+
+        <div class="barra-menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html" class="inicio-item">
+                                <svg class="icone-inicio" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <path d="m3 10 9-7 9 7" />
+                                    <path d="M5 9v12h14V9" />
+                                    <path d="M9 21v-8h6v8" />
+                                </svg>
+                                Início
+                            </a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="explorar.html" class="explorar-item">
+                                <svg class="icon-explorar" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polygon points="16.2 7.8 14 14 7.8 16.2 10 10 16.2 7.8" />
+
+                                </svg>
+                                Explorar
+                            </a>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <a href="meusprojetos.html" class="projetos-item">
+                                <svg class="icon-projetos" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <path
+                                        d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+
+                                </svg>
+                                Meus Projetos
+                            </a>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <a href="mensagens.html" class="mensagem-item">
+                                <svg class="icon-mensagem" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                                    <path d="M3 8l9 6 9-6" />
+
+                                </svg>
+                                Mensagens
+                            </a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="favoritos.html" class="favoritos-item">
+                                <svg class="icon-favoritos" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <path
+                                        d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0 L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8 l1.1 1.1L12 21l7.8-7.5 1.1-1.1 a5.5 5.5 0 0 0-.1-7.8z" />
+
+                                </svg>Favoritos
+                            </a>
+                        </li>
+                        <hr>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
     </header>
 
     <main>
 
-        <div class="cabecalho-pagina">
+        <div class="perfil-cabecalho">
             <div class="container perfil-topo">
 
-                <div class="avatar">JR</div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none"
+                    stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+
+                    <circle cx="12" cy="12" r="10" fill="#2563EB" stroke="none" />
+
+                    <circle cx="12" cy="8" r="3" fill="white" stroke="none" />
+
+                    <path d="M5.5 19.5c.8-3.2 3.2-5 6.5-5s5.7 1.8 6.5 5" fill="white" stroke="none" />
+                </svg>
+
 
                 <div class="perfil-dados">
-                    <h1>Júlio Rafael</h1>
+                    <h1>Julio Rafael</h1>
                     <p class="cargo">Desenvolvedor Web</p>
                     <p>João Pessoa, PB</p>
                     <p><span class="bolinha"></span> Disponível para projetos</p>
                 </div>
 
-                <a href="#" class="btn-contorno">Editar Perfil</a>
             </div>
         </div>
 
@@ -50,10 +152,6 @@
             <div class="container">
                 <ul>
                     <li><a href="#" class="ativa">Sobre</a></li>
-                    <li><a href="#">Habilidades</a></li>
-                    <li><a href="#">Portfólio</a></li>
-                    <li><a href="#">Experiências</a></li>
-                    <li><a href="#">Certificações</a></li>
                 </ul>
             </div>
         </nav>

@@ -1,30 +1,7 @@
+/* estilos só da página inicial (paleta e cabeçalho vêm do geral.css) */
 
-/* paleta */
+/* apelidos usados nesta página */
 :root {
-    /* Fundos */
-    --bg-primary: #F8FAFC;
-    --bg-secondary: #F1F5F9;
-    --bg-card: #FFFFFF;
-
-    /* Bordas */
-    --border-color: #E2E8F0;
-
-    /* Marca */
-    --primary: #2563EB;
-    --primary-hover: #1D4ED8;
-    --secondary: #0EA5E9;
-    --accent: #7C3AED;
-
-    /* Textos */
-    --text-primary: #0F172A;
-    --text-secondary: #64748B;
-
-    /* Estados */
-    --success: #16A34A;
-    --warning: #D97706;
-    --danger: #DC2626;
-
-    /* apelidos usados no resto do CSS */
     --azul: var(--primary);
     --azul-escuro: var(--primary-hover);
     --roxo: var(--accent);
@@ -34,50 +11,10 @@
     --fundo-claro: var(--bg-secondary);
     --raio: 12px;
     --sombra: 0 6px 18px rgba(37, 99, 235, 0.18);
-    /* distância da borda: cresce com a tela (mín 16px, máx 96px) */
-    --margem: clamp(16px, 6vw, 96px);
 }
 
-header,
 main {
-    padding-left: var(--margem);
-    padding-right: var(--margem);
-}
-
-header {
-    background-color: #000;
-    border-bottom: 1px solid #1E293B;
-}
-
-/*cor de fundo */
-body {
-  background-color: var(--bg-primary);
-  color: var(--texto);
-  margin: auto;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-.cabecalho-pagina {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0;
-}
-
-/* menu deitado + busca no canto direito */
-.barra-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
+    padding: 16px var(--margem);
 }
 
 /* busca centralizada com botão */
@@ -124,7 +61,6 @@ body {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
 }
 
-
 .icone-busca {
     width: 20px;
     height: 20px;
@@ -144,84 +80,6 @@ body {
     color: #8696a8;
 }
 
-/* notificações e perfil (canto superior direito) */
-.acoes {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 40px;
-}
-
-.acoes button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    border: none;
-    background: transparent;
-    color: #E2E8F0;
-    cursor: pointer;
-}
-
-.btn-notificacoes svg {
-    width: 26px;
-    height: 26px;
-}
-
-.btn-notificacoes:hover {
-    color: var(--azul);
-}
-
-.btn-perfil {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    cursor: pointer;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: var(--azul) !important;
-    color: #fff !important;
-    overflow: hidden;
-}
-
-.btn-perfil svg {
-    width: 28px;
-    height: 28px;
-    margin: 0;
-}
-.logo figure {
-    margin: 0;
-}
-
-.logo img {
-    display: block;
-    width: 250px;
-    height: auto;
-}
-
-.icon {
-    width: 20px;
-    height: 20px;
-}
-
-
-
-/* menu + conteúdo lado a lado */
-.conteudo {
-    display: flex;
-    align-items: flex-start;
-}
-
-main {
-    flex: 1;
-    min-width: 0;
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
-
 /* banner*/
 .banner figure {
     margin: 0;
@@ -236,68 +94,6 @@ main {
     border-radius: var(--raio);
     border-bottom: 5px solid var(--roxo);
     box-shadow: var(--sombra);
-}
-
-
-
-/* itens do menu (mesmo padrão para todos) */
-.inicio-item,
-.explorar-item,
-.projetos-item,
-.mensagem-item,
-.favoritos-item {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    color: #E2E8F0;
-    text-decoration: none;
-}
-
-.inicio-item:hover,
-.explorar-item:hover,
-.projetos-item:hover,
-.mensagem-item:hover,
-.favoritos-item:hover {
-    color: var(--azul);
-}
-
-.icone-inicio,
-.icon-explorar,
-.icon-projetos,
-.icon-mensagem,
-.icon-favoritos {
-    width: 22px;
-    height: 22px;
-    flex-shrink: 0;
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    padding: 12px 0;
-    margin: 0;
-}
-
-nav ul hr {
-    height: 22px;
-    margin: 0 18px;
-    border: none;
-    border-left: 1px solid #1E293B;
-}
-
-nav ul li {
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    letter-spacing: 0.8px;
-    line-height: 1.5;
-}
-/* página atual no menu */
-nav a.ativo {
-    color: #60A5FA;
-    font-weight: bold;
-    border-bottom: 3px solid var(--secondary);
-    padding-bottom: 4px;
 }
 
 /* seções de projetos */
@@ -436,17 +232,17 @@ nav a.ativo {
     width: 28px;
     height: 28px;
     border-radius: 50%;
-    background: #3a4756;
-    color: #8a97a6;
+    background: var(--azul);
+    color: #fff;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     overflow: hidden;
 }
 
 .avatar svg {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
 }
 
 .card-prazo {
