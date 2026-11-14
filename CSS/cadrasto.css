@@ -1,30 +1,90 @@
-body {
-  background-color: #1e1e2f;
-  color: #050B12;
-  margin: 0;
+/* estilos só da página de cadastro (paleta e cabeçalho vêm do geral.css) */
+
+main {
+    padding: 32px var(--margem) 48px;
+    font-family: Arial, sans-serif;
 }
 
-
-
-.logo img{
-    width: 180px;
-    height: auto;
+.cadastro {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
 }
 
+.cadastro h1 {
+    font-size: 26px;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
 
-.campo{
-  color: #2893c5;
-  font-size: 16px;         
-  font-family: inherit;    
-  padding: 10px;    
+.cadastro > p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 18px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 0;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-primary);
+}
+
+.campo input {
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+    font-size: 15px;
+    color: var(--text-primary);
+}
+
+.campo input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.termos {
+    padding: 10px 0;
+    font-size: 13px;
+    color: var(--text-secondary);
 }
 
 .termos a {
-    color: #00CFFF;
+    color: var(--primary);
     text-decoration: underline;
     font-weight: bold;
 }
 
 .termos a:hover {
-    color: #FFFFFF;
+    color: var(--primary-hover);
+}
+
+.form-cadastro button[type="submit"] {
+    width: 100%;
+    height: 44px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-cadastro button[type="submit"]:hover {
+    background: var(--primary-hover);
 }

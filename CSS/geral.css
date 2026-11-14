@@ -19,6 +19,12 @@
     --text-primary: #0F172A;
     --text-secondary: #64748B;
 
+    /* cinza de fundo da página */
+    --cinza_claro: rgb(230, 227, 227);
+
+    /* cor do cabeçalho */
+    --cor-header: #0F172A;
+
     /* distância da borda: cresce com a tela (mín 16px, máx 96px) */
     --margem: clamp(16px, 6vw, 96px);
 }
@@ -30,7 +36,7 @@
 }
 
 body {
-    background-color: var(--bg-primary);
+    background-color: var(--cinza_claro);
     color: var(--text-primary);
 }
 
@@ -38,7 +44,7 @@ body {
 header {
     padding-left: var(--margem);
     padding-right: var(--margem);
-    background-color: #000;
+    background: var(--cor-header);
     border-bottom: 1px solid #1E293B;
 }
 
