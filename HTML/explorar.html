@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectFreelas - Explorar</title>
+    <link rel="icon" type="image/x-icon" href="../Imagems/favicon.ico">
+    <link rel="stylesheet" href="../CSS/geral.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/explorar.css">
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="cabecalho-pagina">
+            <div class="logo">
+                <figure>
+                    <img class="logo" src="../Imagems/Logo ConnectFreelas em Azul e Branco.png"
+                        alt="Logo ConnectFreelas">
+                </figure>
+            </div>
+
+
+
+            <div class="acoes">
+                <a href="publicar.html" class="btn-publicar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 5v14M5 12h14" />
+                    </svg>
+                    Publicar projeto
+                </a>
+
+                <button type="button" class="btn-notificacoes" aria-label="Notificações">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                        <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                    </svg>
+                </button>
+
+                <a href="perfil.html" class="btn-perfil" aria-label="Perfil">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="barra-menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="home.html" class="inicio-item">
+                                <svg class="icone-inicio" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <path d="m3 10 9-7 9 7" />
+                                    <path d="M5 9v12h14V9" />
+                                    <path d="M9 21v-8h6v8" />
+                                </svg>
+                                Início
+                            </a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="explorar.html" class="explorar-item ativo">
+                                <svg class="icon-explorar" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polygon points="16.2 7.8 14 14 7.8 16.2 10 10 16.2 7.8" />
+
+                                </svg>
+                                Explorar
+                            </a>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <a href="meusprojetos.html" class="projetos-item">
+                                <svg class="icon-projetos" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <path
+                                        d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+
+                                </svg>
+                                Meus Projetos
+                            </a>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <a href="mensagens.html" class="mensagem-item">
+                                <svg class="icon-mensagem" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                                    <path d="M3 8l9 6 9-6" />
+
+                                </svg>
+                                Mensagens
+                            </a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="favoritos.html" class="favoritos-item">
+                                <svg class="icon-favoritos" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <path
+                                        d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0 L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8 l1.1 1.1L12 21l7.8-7.5 1.1-1.1 a5.5 5.5 0 0 0-.1-7.8z" />
+
+                                </svg>Favoritos
+                            </a>
+                        </li>
+                        <hr>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- destaque com título e busca -->
+    <section class="explorar-destaque">
+        <h1>Explorar projetos</h1>
+        <p>Encontre o projeto certo para o seu talento.</p>
+
+        <form class="busca-linha" id="form-busca">
+            <div class="Buscar">
+                <svg class="icone-busca" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.3-4.3" />
+                </svg>
+                <input type="search" id="busca" placeholder="Ex.: site, logotipo, tradução..." aria-label="Buscar">
+            </div>
+            <button type="submit" class="btn-buscar">Buscar</button>
+        </form>
+    </section>
+
+    <main>
+
+        <!-- filtros -->
+        <div class="filtros">
+            <ul class="categorias-lista">
+                <li>Todos</li>
+                <li>Desenvolvimento</li>
+                <li>Design</li>
+                <li>Marketing Digital</li>
+                <li>Redação</li>
+                <li>Audiovisual</li>
+                <li>Suporte e TI</li>
+                <li>Tradução</li>
+            </ul>
+
+            <label class="ordenar">
+                Ordenar por
+                <select id="ordem">
+                    <option value="recentes">Mais recentes</option>
+                    <option value="prazo">Menor prazo</option>
+                    <option value="valor">Menor valor</option>
+                </select>
+            </label>
+        </div>
+
+        <p class="resultado" id="resultado"></p>
+
+        <div class="lista-projetos" id="lista"></div>
+
+        <p class="vazio" id="vazio" hidden>Nenhum projeto encontrado. Tente outra busca ou categoria.</p>
+
+    </main>
+
+    <script>
+        const nomes = {
+            dev: 'Desenvolvimento', design: 'Design', mkt: 'Marketing Digital', redacao: 'Redação',
+            audio: 'Audiovisual', ti: 'Suporte e TI', trad: 'Tradução'
+        };
+
+        // ordem da lista = mais recentes primeiro
+        const projetos = [
+            { cat: 'dev', titulo: 'Site institucional em HTML e CSS', desc: 'Criação de um site simples, responsivo e com identidade visual moderna.', min: 400, max: 700, dias: 7 },
+            { cat: 'design', titulo: 'Criação de logotipo e identidade visual', desc: 'Desenvolvimento de logotipo, paleta de cores e manual de uso da marca.', min: 250, max: 500, dias: 5 },
+            { cat: 'mkt', titulo: 'Gestão de redes sociais', desc: 'Planejamento e publicação de conteúdo para Instagram e TikTok (1 mês).', min: 600, max: 1200, dias: 30 },
+            { cat: 'redacao', titulo: 'Redação de artigos (Blog)', desc: 'Produção de 4 artigos otimizados para SEO (até 1.000 palavras cada).', min: 300, max: 600, dias: 10 },
+            { cat: 'audio', titulo: 'Edição de vídeo curto (Reels/TikTok)', desc: 'Edição de vídeos curtos com cortes, legendas e trilha sonora.', min: 150, max: 300, dias: 3 },
+            { cat: 'ti', titulo: 'Configuração de servidor Linux', desc: 'Instalação e configuração segura de servidor para aplicações web.', min: 350, max: 800, dias: 5 },
+            { cat: 'trad', titulo: 'Tradução de artigo (PT ↔ EN)', desc: 'Tradução de artigo acadêmico com revisão e formatação.', min: 200, max: 450, dias: 4 },
+            { cat: 'dev', titulo: 'Loja virtual com pagamento', desc: 'Criação de loja virtual com carrinho e integração de pagamento.', min: 900, max: 2000, dias: 20 },
+            { cat: 'design', titulo: 'Layout de aplicativo mobile', desc: 'Telas de um app em Figma, com protótipo clicável e guia de estilos.', min: 500, max: 900, dias: 12 },
+            { cat: 'dev', titulo: 'Automação de planilhas com Python', desc: 'Scripts para importar, limpar e gerar relatórios a partir de planilhas.', min: 200, max: 400, dias: 6 },
+            { cat: 'mkt', titulo: 'Campanha de anúncios no Google', desc: 'Configuração e otimização de campanha de pesquisa para pequena loja.', min: 400, max: 800, dias: 14 },
+            { cat: 'audio', titulo: 'Locução para vídeo institucional', desc: 'Gravação de locução profissional de 2 minutos com edição de áudio.', min: 120, max: 250, dias: 2 }
+        ];
+
+        const brl = n => n.toLocaleString('pt-BR');
+        const estado = { cat: 'todos', texto: '', ordem: 'recentes' };
+
+        const lista = document.getElementById('lista');
+        const vazio = document.getElementById('vazio');
+        const resultado = document.getElementById('resultado');
+
+        function card(p) {
+            return `
+            <article class="card-projeto">
+                <div class="card-imagem cat-${p.cat}">
+                    <span class="card-categoria">${nomes[p.cat]}</span>
+                    <button type="button" class="btn-salvar" aria-label="Salvar projeto">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z" /></svg>
+                    </button>
+                </div>
+                <div class="card-corpo">
+                    <h3>${p.titulo}</h3>
+                    <p>${p.desc}</p>
+                    <div class="card-rodape">
+                        <span class="card-autor">R$ ${brl(p.min)} – ${brl(p.max)}</span>
+                        <span class="card-prazo">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg>
+                            ${p.dias} dias
+                        </span>
+                    </div>
+                </div>
+            </article>`;
+        }
+
+        function render() {
+            const t = estado.texto.trim().toLowerCase();
+            let itens = projetos.filter(p =>
+                (estado.cat === 'todos' || p.cat === estado.cat) &&
+                (!t || (p.titulo + ' ' + p.desc + ' ' + nomes[p.cat]).toLowerCase().includes(t))
+            );
+
+            if (estado.ordem === 'prazo') itens = [...itens].sort((a, b) => a.dias - b.dias);
+            if (estado.ordem === 'valor') itens = [...itens].sort((a, b) => a.min - b.min);
+
+            lista.innerHTML = itens.map(card).join('');
+            vazio.hidden = itens.length > 0;
+            resultado.textContent = itens.length + (itens.length === 1 ? ' projeto encontrado' : ' projetos encontrados');
+        }
+
+        document.getElementById('form-busca').addEventListener('submit', e => {
+            e.preventDefault();
+            estado.texto = document.getElementById('busca').value;
+            render();
+        });
+
+        document.getElementById('busca').addEventListener('input', e => {
+            estado.texto = e.target.value;
+            render();
+        });
+
+        document.getElementById('ordem').addEventListener('change', e => {
+            estado.ordem = e.target.value;
+            render();
+        });
+
+        lista.addEventListener('click', e => {
+            const b = e.target.closest('.btn-salvar');
+            if (b) b.classList.toggle('salvo');
+        });
+
+        // busca vinda da home (explorar.html?q=termo)
+        const q = new URLSearchParams(location.search).get('q');
+        if (q) {
+            document.getElementById('busca').value = q;
+            estado.texto = q;
+        }
+
+        render();
+    </script>
+</body>
+
+</html>

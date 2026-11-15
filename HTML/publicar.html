@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectFreelas - Publicar projeto</title>
+    <link rel="icon" type="image/x-icon" href="../Imagems/favicon.ico">
+    <link rel="stylesheet" href="../CSS/geral.css">
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/publicar.css">
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="cabecalho-pagina">
+            <div class="logo">
+                <figure>
+                    <img class="logo" src="../Imagems/Logo ConnectFreelas em Azul e Branco.png"
+                        alt="Logo ConnectFreelas">
+                </figure>
+            </div>
+
+
+
+            <div class="acoes">
+                <a href="publicar.html" class="btn-publicar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 5v14M5 12h14" />
+                    </svg>
+                    Publicar projeto
+                </a>
+
+                <button type="button" class="btn-notificacoes" aria-label="Notificações">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                        <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                    </svg>
+                </button>
+
+                <a href="perfil.html" class="btn-perfil" aria-label="Perfil">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="barra-menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="home.html" class="inicio-item">
+                                <svg class="icone-inicio" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <path d="m3 10 9-7 9 7" />
+                                    <path d="M5 9v12h14V9" />
+                                    <path d="M9 21v-8h6v8" />
+                                </svg>
+                                Início
+                            </a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="explorar.html" class="explorar-item">
+                                <svg class="icon-explorar" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polygon points="16.2 7.8 14 14 7.8 16.2 10 10 16.2 7.8" />
+
+                                </svg>
+                                Explorar
+                            </a>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <a href="meusprojetos.html" class="projetos-item">
+                                <svg class="icon-projetos" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <path
+                                        d="M3 6a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+
+                                </svg>
+                                Meus Projetos
+                            </a>
+                        </li>
+
+                        <hr>
+
+                        <li>
+                            <a href="mensagens.html" class="mensagem-item">
+                                <svg class="icon-mensagem" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                                    <path d="M3 8l9 6 9-6" />
+
+                                </svg>
+                                Mensagens
+                            </a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="favoritos.html" class="favoritos-item">
+                                <svg class="icon-favoritos" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+
+                                    <path
+                                        d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0 L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8 l1.1 1.1L12 21l7.8-7.5 1.1-1.1 a5.5 5.5 0 0 0-.1-7.8z" />
+
+                                </svg>Favoritos
+                            </a>
+                        </li>
+                        <hr>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="publicar-titulo">
+            <h1>Publicar projeto</h1>
+            <p>Descreva o que você precisa e receba propostas de freelancers.</p>
+        </div>
+
+        <form class="form-publicar" id="form-publicar" action="#" method="post">
+
+            <div class="campo">
+                <label for="titulo">Título do projeto</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Ex.: Site institucional para minha empresa"
+                    maxlength="80" required>
+            </div>
+
+            <div class="campo">
+                <label for="categoria">Categoria</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="" selected disabled>Escolha uma área</option>
+                    <option>Desenvolvimento</option>
+                    <option>Design</option>
+                    <option>Marketing Digital</option>
+                    <option>Redação</option>
+                    <option>Audiovisual</option>
+                    <option>Suporte e TI</option>
+                    <option>Tradução</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao" rows="6"
+                    placeholder="Explique o que precisa ser feito, o resultado esperado e qualquer detalhe importante."
+                    required></textarea>
+            </div>
+
+            <div class="campo">
+                <label for="habilidades">Habilidades desejadas</label>
+                <input type="text" id="habilidades" name="habilidades" placeholder="Ex.: HTML, CSS, JavaScript">
+                <small>Separe por vírgula.</small>
+            </div>
+
+            <div class="linha-campos">
+                <div class="campo">
+                    <label for="valor-min">Valor mínimo (R$)</label>
+                    <input type="number" id="valor-min" name="valor-min" min="0" step="10" placeholder="400" required>
+                </div>
+                <div class="campo">
+                    <label for="valor-max">Valor máximo (R$)</label>
+                    <input type="number" id="valor-max" name="valor-max" min="0" step="10" placeholder="700" required>
+                </div>
+                <div class="campo">
+                    <label for="prazo">Prazo (dias)</label>
+                    <input type="number" id="prazo" name="prazo" min="1" placeholder="7" required>
+                </div>
+            </div>
+
+            <p class="erro" id="erro" hidden></p>
+            <p class="sucesso" id="sucesso" hidden>Projeto publicado com sucesso!</p>
+
+            <div class="acoes-form">
+                <a href="home.html" class="btn-cancelar">Cancelar</a>
+                <button type="submit" class="btn-buscar">Publicar projeto</button>
+            </div>
+        </form>
+
+    </main>
+
+    <script>
+        const form = document.getElementById('form-publicar');
+        const erro = document.getElementById('erro');
+        const sucesso = document.getElementById('sucesso');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            sucesso.hidden = true;
+
+            const min = Number(form['valor-min'].value);
+            const max = Number(form['valor-max'].value);
+            if (max < min) {
+                erro.textContent = 'O valor máximo não pode ser menor que o mínimo.';
+                erro.hidden = false;
+                return;
+            }
+
+            erro.hidden = true;
+            sucesso.hidden = false;
+            form.reset();
+        });
+    </script>
+</body>
+
+</html>

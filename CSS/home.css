@@ -80,22 +80,6 @@ main {
     color: #8696a8;
 }
 
-/* banner*/
-.banner figure {
-    margin: 0;
-}
-
-.banner img {
-    display: block;
-    width: 100%;
-    max-width: 1136px;
-    height: auto;
-    margin: 24px auto;
-    border-radius: var(--raio);
-    border-bottom: 5px solid var(--roxo);
-    box-shadow: var(--sombra);
-}
-
 /* seções de projetos */
 .projetos {
     margin-top: 32px;
@@ -258,3 +242,55 @@ main {
 }
 
 
+
+/* topo da home: banner com o jovem programador, título e busca */
+.topo-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    aspect-ratio: 4 / 1;
+    min-height: 260px;
+    margin: 8px 0;
+    padding: 32px clamp(20px, 5vw, 56px);
+    text-align: left;
+    font-family: Arial, sans-serif;
+    background: url("../Imagems/Jovem Programador no Home Office.png") center / cover no-repeat;
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+}
+
+.topo-home h1 {
+    max-width: 52%;
+    font-size: clamp(24px, 3.4vw, 38px);
+    line-height: 1.15;
+    color: var(--texto);
+}
+
+.topo-home p {
+    max-width: 48%;
+    margin-top: 10px;
+    color: var(--texto-suave);
+    font-size: 16px;
+}
+
+.topo-home .busca-linha {
+    justify-content: flex-start;
+    margin: 22px 0 0;
+}
+
+.topo-home .Buscar {
+    flex: 0 1 380px;
+    background: #fff;
+}
+
+@media (max-width: 800px) {
+    .topo-home {
+        aspect-ratio: auto;
+        background-position: 75% center;
+    }
+
+    .topo-home h1,
+    .topo-home p {
+        max-width: 100%;
+    }
+}

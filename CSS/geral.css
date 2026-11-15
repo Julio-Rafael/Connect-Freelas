@@ -178,3 +178,28 @@ header nav a.ativo {
     border-bottom: 3px solid var(--secondary);
     padding-bottom: 4px;
 }
+
+/* botão "Publicar projeto" no cabeçalho */
+.btn-publicar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 16px;
+    border-radius: 10px;
+    background: var(--primary);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.btn-publicar:hover {
+    background: var(--primary-hover);
+}
+
+.btn-publicar svg {
+    width: 16px;
+    height: 16px;
+}

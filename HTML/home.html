@@ -26,6 +26,14 @@
 
 
             <div class="acoes">
+                <a href="publicar.html" class="btn-publicar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 5v14M5 12h14" />
+                    </svg>
+                    Publicar projeto
+                </a>
+
                 <button type="button" class="btn-notificacoes" aria-label="Notificações">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" aria-hidden="true">
@@ -127,25 +135,22 @@
 
         <main>
 
-            <div class="banner">
-                <figure>
-                    <img class="Banner" src="../Imagems/Conecte Talentos e Oportunidades Novo.png"
-                        alt="Banner ConnectFreelas">
-                </figure>
-            </div>
+            <div class="topo-home">
+                <h1>Conecte talentos a oportunidades</h1>
+                <p>Encontre projetos para o seu talento ou publique o que você precisa. Tudo em um só lugar.</p>
 
-
-
-            <div class="busca-linha">
-                <div class="Buscar">
-                    <svg class="icone-busca" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <circle cx="11" cy="11" r="8" />
-                        <path d="m21 21-4.3-4.3" />
-                    </svg>
-                    <input type="search" placeholder="Ex.: site, logotipo, tradução..." aria-label="Buscar">
-                </div>
-                <button type="button" class="btn-buscar">Buscar</button>
+                <form class="busca-linha" action="explorar.html" method="get">
+                    <div class="Buscar">
+                        <svg class="icone-busca" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.3-4.3" />
+                        </svg>
+                        <input type="search" name="q" placeholder="Ex.: site, logotipo, tradução..."
+                            aria-label="Buscar">
+                    </div>
+                    <button type="submit" class="btn-buscar">Buscar</button>
+                </form>
             </div>
 
     <section class="projetos">

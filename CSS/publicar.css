@@ -1,0 +1,129 @@
+/* Publicar projeto — paleta e cabeçalho vêm do geral.css; botão e variáveis do home.css */
+
+.publicar-titulo {
+    margin: 16px 0 24px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.publicar-titulo h1 {
+    font-size: 30px;
+    color: var(--texto);
+}
+
+.publicar-titulo p {
+    margin-top: 4px;
+    color: var(--texto-suave);
+}
+
+.form-publicar {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    box-shadow: 0 2px 8px rgba(31, 42, 55, 0.06);
+    font-family: Arial, sans-serif;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+    min-width: 0;
+}
+
+.campo label {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--texto);
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 10px 14px;
+    background: var(--bg-secondary);
+    border: 2px solid var(--borda);
+    border-radius: 10px;
+    color: var(--texto);
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--azul);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.campo small {
+    font-size: 12px;
+    color: var(--texto-suave);
+}
+
+.linha-campos {
+    display: flex;
+    gap: 16px;
+}
+
+.erro,
+.sucesso {
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.erro {
+    background: rgba(220, 38, 38, 0.1);
+    color: #DC2626;
+}
+
+.sucesso {
+    background: rgba(22, 163, 74, 0.1);
+    color: #16A34A;
+}
+
+.acoes-form {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.acoes-form .btn-buscar {
+    height: 44px;
+    padding: 0 24px;
+}
+
+.btn-cancelar {
+    color: var(--texto-suave);
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.btn-cancelar:hover {
+    color: var(--texto);
+}
+
+@media (max-width: 640px) {
+    .linha-campos {
+        flex-direction: column;
+    }
+
+    .form-publicar {
+        padding: 20px;
+    }
+}
