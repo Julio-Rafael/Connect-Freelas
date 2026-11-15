@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConectaFreelas - Cadastro</title>
+    <!-- ícone da aba do navegador -->
     <link rel="icon" type="image/x-icon" href="../Imagems/favicon.ico">
+    <!-- geral.css: paleta, reset e cabeçalho comuns; cadrasto.css: estilos só desta página -->
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="../CSS/cadrasto.css">
 </head>
 
 <body>
 
+    <!-- cabeçalho simples: só o logo, que leva à home -->
     <header>
         <div class="cabecalho-pagina">
             <div class="logo">
@@ -26,6 +29,7 @@
     </header>
 
     <main>
+        <!-- cartão do formulário de cadastro -->
         <section class="cadastro">
 
             <h1>Criar Conta</h1>
@@ -34,7 +38,10 @@
             </p>
 
 
+            <!-- novalidate: desliga a validação automática do navegador.
+                 onsubmit: ao enviar, não manda dados a lugar nenhum (return false); só abre a home -->
             <form class="form-cadastro" novalidate onsubmit="window.location.href='home.html'; return false;">
+                <!-- cada campo: o "for" do label bate com o "id" do input (clicar no rótulo foca o campo) -->
                 <div class="campo">
                     <label for="nome">Nome completo</label>
                     <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
@@ -50,6 +57,7 @@
                     <input type="tel" id="telefone" name="telefone" placeholder="(83) 99999-9999" required>
                 </div>
 
+                <!-- senha: minlength="8" exige no mínimo 8 caracteres -->
                 <div class="campo">
                     <label for="senha">Senha</label>
                     <input type="password" id="senha" name="senha" placeholder="Mínimo 8 caracteres" minlength="8"
@@ -62,6 +70,7 @@
                         required>
                 </div>
 
+                <!-- aceite dos termos (as páginas termos.html e privacidade.html ainda não existem) -->
                 <div class="termos">
                     <label class="check">
                         <input type="checkbox" id="termos" name="termos" required>
@@ -74,6 +83,7 @@
                 </div>
 
 
+                <!-- botão que envia o formulário -->
                 <button type="submit">
                     Cadastrar
                 </button>

@@ -1,5 +1,6 @@
 /* Publicar projeto — paleta e cabeçalho vêm do geral.css; botão e variáveis do home.css */
 
+/* título e subtítulo no topo da página, centralizados */
 .publicar-titulo {
     margin: 16px 0 24px;
     text-align: center;
@@ -16,6 +17,7 @@
     color: var(--texto-suave);
 }
 
+/* cartão branco do formulário: campos empilhados, centralizado, largura máxima 720px */
 .form-publicar {
     display: flex;
     flex-direction: column;
@@ -30,6 +32,7 @@
     font-family: Arial, sans-serif;
 }
 
+/* cada campo: rótulo em cima, caixa embaixo e dica pequena (small) por último */
 .campo {
     display: flex;
     flex-direction: column;
@@ -44,6 +47,7 @@
     color: var(--texto);
 }
 
+/* caixas de digitar, de escolher e de texto longo com o mesmo visual */
 .campo input,
 .campo select,
 .campo textarea {
@@ -58,10 +62,12 @@
     outline: none;
 }
 
+/* texto longo só pode ser redimensionado na vertical */
 .campo textarea {
     resize: vertical;
 }
 
+/* campo selecionado: borda azul e brilho suave */
 .campo input:focus,
 .campo select:focus,
 .campo textarea:focus {
@@ -74,11 +80,13 @@
     color: var(--texto-suave);
 }
 
+/* dois campos lado a lado na mesma linha */
 .linha-campos {
     display: flex;
     gap: 16px;
 }
 
+/* mensagens de retorno do formulário: .erro (vermelho) e .sucesso (verde) */
 .erro,
 .sucesso {
     padding: 10px 14px;
@@ -96,6 +104,7 @@
     color: #16A34A;
 }
 
+/* botões do final do formulário, alinhados à direita */
 .acoes-form {
     display: flex;
     justify-content: flex-end;
@@ -108,6 +117,7 @@
     padding: 0 24px;
 }
 
+/* link "Cancelar": discreto, só texto */
 .btn-cancelar {
     color: var(--texto-suave);
     font-size: 15px;
@@ -118,6 +128,7 @@
     color: var(--texto);
 }
 
+/* celular: campos da mesma linha ficam empilhados e o formulário tem menos espaço interno */
 @media (max-width: 640px) {
     .linha-campos {
         flex-direction: column;

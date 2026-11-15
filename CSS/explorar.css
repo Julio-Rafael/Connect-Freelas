@@ -16,6 +16,7 @@
     box-shadow: var(--sombra);
 }
 
+/* título, descrição e campo de busca dentro do banner */
 .explorar-destaque h1 {
     font-size: clamp(26px, 4vw, 38px);
     color: var(--texto);
@@ -37,7 +38,7 @@
     background: #fff;
 }
 
-/* filtros */
+/* filtros: categorias à esquerda e "ordenar por" à direita (quebra de linha se faltar espaço) */
 .filtros {
     display: flex;
     flex-wrap: wrap;
@@ -70,6 +71,7 @@
     font-weight: bold;
 }
 
+/* seletor "ordenar por": rótulo + caixa de seleção */
 .ordenar {
     display: flex;
     align-items: center;
@@ -88,6 +90,7 @@
     font-size: 14px;
 }
 
+/* texto com a quantidade de resultados encontrados */
 .resultado {
     margin: 12px 0 16px;
     font-family: Arial, sans-serif;
@@ -95,6 +98,7 @@
     color: var(--texto-suave);
 }
 
+/* mensagem exibida quando a busca não encontra nenhum projeto */
 .vazio {
     padding: 48px 0;
     text-align: center;
@@ -107,6 +111,7 @@
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
 }
 
+/* celular: filtros empilhados em coluna */
 @media (max-width: 640px) {
     .filtros {
         flex-direction: column;

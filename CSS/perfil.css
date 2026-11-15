@@ -1,10 +1,12 @@
 /* estilos só da página de perfil (paleta e cabeçalho vêm do geral.css) */
 
+/* área principal da página, com a margem lateral padrão do site */
 main {
     padding: 24px var(--margem) 40px;
     font-family: Arial, sans-serif;
 }
 
+/* container sem limite de largura: ocupa toda a área disponível */
 .container {
     width: 100%;
     max-width: none;
@@ -12,6 +14,7 @@ main {
 }
 
 /* ---------- topo do perfil ---------- */
+/* cartão branco com avatar, nome, cargo e status */
 .perfil-cabecalho {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -19,6 +22,7 @@ main {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
+/* avatar (svg) à esquerda e dados da pessoa ao lado */
 .perfil-topo {
     display: flex;
     align-items: center;
@@ -50,12 +54,14 @@ main {
     margin-top: 4px;
 }
 
+/* cargo/profissão em destaque, na cor da marca */
 .perfil-dados .cargo {
     font-size: 16px;
     font-weight: bold;
     color: var(--primary);
 }
 
+/* bolinha verde de "disponível/online" com um halo mais claro em volta */
 .bolinha {
     width: 10px;
     height: 10px;
@@ -70,6 +76,7 @@ main {
     border-bottom: 1px solid var(--border-color);
 }
 
+/* abas lado a lado; no celular a lista rola na horizontal */
 .abas ul {
     display: flex;
     gap: 8px;
@@ -92,6 +99,7 @@ main {
     color: var(--primary);
 }
 
+/* aba da seção atual: cor da marca, negrito e traço embaixo */
 .abas a.ativa {
     color: var(--primary);
     font-weight: bold;
@@ -99,6 +107,7 @@ main {
 }
 
 /* ---------- conteúdo em duas colunas ---------- */
+/* duas colunas: a da esquerda é o dobro da largura da direita (2fr / 1fr) */
 .detalhe {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -106,12 +115,14 @@ main {
     align-items: start;
 }
 
+/* cada coluna empilha seus cards na vertical */
 .coluna {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
+/* card genérico: caixa branca com borda, cantos arredondados e sombra leve */
 .card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
@@ -135,6 +146,7 @@ main {
     color: var(--text-secondary);
 }
 
+/* link pequeno "Editar" ao lado do título do card */
 .editar {
     font-size: 13px;
     font-weight: normal;
@@ -153,6 +165,7 @@ main {
     gap: 8px;
 }
 
+/* etiqueta (badge) azul-clara de cada habilidade */
 .tag {
     padding: 6px 14px;
     border-radius: 999px;
@@ -163,7 +176,7 @@ main {
     font-weight: bold;
 }
 
-/* informações básicas */
+/* informações básicas: lista de pares rótulo (dt) / valor (dd), com linha separando cada par */
 .resumo dl div {
     padding: 10px 0;
     border-bottom: 1px solid var(--border-color);
@@ -186,7 +199,7 @@ main {
     color: var(--text-primary);
 }
 
-/* links profissionais */
+/* links profissionais: lista sem marcadores, cada item com linha embaixo */
 .links {
     list-style: none;
 }
@@ -225,6 +238,7 @@ main {
 }
 
 /* ---------- rodapé ---------- */
+/* rodapé preto com links centralizados */
 footer {
     padding: 24px var(--margem);
     background: #000;
@@ -253,6 +267,7 @@ footer a:hover {
 }
 
 /* ---------- telas pequenas ---------- */
+/* telas pequenas: as duas colunas viram uma só */
 @media (max-width: 800px) {
     .detalhe {
         grid-template-columns: 1fr;
@@ -276,6 +291,7 @@ footer a:hover {
     color: var(--text-primary);
 }
 
+/* espaço entre as seções diretas do main */
 main > section {
     margin-top: 24px;
 }

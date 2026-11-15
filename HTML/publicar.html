@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConnectFreelas - Publicar projeto</title>
+    <!-- ícone da aba do navegador -->
     <link rel="icon" type="image/x-icon" href="../Imagems/favicon.ico">
+    <!-- geral.css: base e cabeçalho; home.css: variáveis e botão reaproveitados; publicar.css: só desta página -->
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="../CSS/home.css">
     <link rel="stylesheet" href="../CSS/publicar.css">
@@ -15,7 +17,9 @@
 
 
 
+    <!-- cabeçalho (igual ao da home): linha de cima com logo e ações, linha de baixo com o menu -->
     <header>
+        <!-- linha de cima: logo à esquerda; publicar, notificações e perfil à direita -->
         <div class="cabecalho-pagina">
             <div class="logo">
                 <figure>
@@ -27,6 +31,7 @@
 
 
             <div class="acoes">
+                <!-- botão para publicar projeto (esta é a própria página) -->
                 <a href="publicar.html" class="btn-publicar">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" aria-hidden="true">
@@ -35,6 +40,7 @@
                     Publicar projeto
                 </a>
 
+                <!-- sino de notificações (ainda sem função) -->
                 <button type="button" class="btn-notificacoes" aria-label="Notificações">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" aria-hidden="true">
@@ -43,6 +49,7 @@
                     </svg>
                 </button>
 
+                <!-- ícone redondo que leva ao perfil -->
                 <a href="perfil.html" class="btn-perfil" aria-label="Perfil">
                     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                         <circle cx="12" cy="8" r="4" />
@@ -52,10 +59,12 @@
             </div>
         </div>
 
+        <!-- linha de baixo: menu de navegação (os <hr> são as divisórias verticais entre os links) -->
         <div class="barra-menu">
             <div class="menu">
                 <nav>
                     <ul>
+                        <!-- Início -->
                         <li>
                             <a href="home.html" class="inicio-item">
                                 <svg class="icone-inicio" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -69,6 +78,7 @@
                             </a>
                         </li>
                         <hr>
+                        <!-- Explorar -->
                         <li>
                             <a href="explorar.html" class="explorar-item">
                                 <svg class="icon-explorar" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -84,6 +94,7 @@
 
                         <hr>
 
+                        <!-- Meus Projetos (página meusprojetos.html ainda não existe) -->
                         <li>
                             <a href="meusprojetos.html" class="projetos-item">
                                 <svg class="icon-projetos" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -99,6 +110,7 @@
 
                         <hr>
 
+                        <!-- Mensagens (página mensagens.html ainda não existe) -->
                         <li>
                             <a href="mensagens.html" class="mensagem-item">
                                 <svg class="icon-mensagem" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -112,6 +124,7 @@
                             </a>
                         </li>
                         <hr>
+                        <!-- Favoritos (página favoritos.html ainda não existe) -->
                         <li>
                             <a href="favoritos.html" class="favoritos-item">
                                 <svg class="icon-favoritos" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -133,19 +146,23 @@
 
     <main>
 
+        <!-- título da página -->
         <div class="publicar-titulo">
             <h1>Publicar projeto</h1>
             <p>Descreva o que você precisa e receba propostas de freelancers.</p>
         </div>
 
+        <!-- formulário: não envia a lugar nenhum (action="#"); o JavaScript no fim da página valida e mostra a mensagem -->
         <form class="form-publicar" id="form-publicar" action="#" method="post">
 
+            <!-- título: até 80 caracteres (maxlength); "required" = obrigatório -->
             <div class="campo">
                 <label for="titulo">Título do projeto</label>
                 <input type="text" id="titulo" name="titulo" placeholder="Ex.: Site institucional para minha empresa"
                     maxlength="80" required>
             </div>
 
+            <!-- categoria: a 1ª opção é só um aviso (selected + disabled), não pode ser escolhida -->
             <div class="campo">
                 <label for="categoria">Categoria</label>
                 <select id="categoria" name="categoria" required>
@@ -160,6 +177,7 @@
                 </select>
             </div>
 
+            <!-- descrição: texto longo em várias linhas (rows="6" define a altura inicial) -->
             <div class="campo">
                 <label for="descricao">Descrição</label>
                 <textarea id="descricao" name="descricao" rows="6"
@@ -167,12 +185,14 @@
                     required></textarea>
             </div>
 
+            <!-- habilidades: opcional (sem required) -->
             <div class="campo">
                 <label for="habilidades">Habilidades desejadas</label>
                 <input type="text" id="habilidades" name="habilidades" placeholder="Ex.: HTML, CSS, JavaScript">
                 <small>Separe por vírgula.</small>
             </div>
 
+            <!-- valor mínimo, valor máximo e prazo lado a lado; type="number" só aceita números (min = menor valor permitido) -->
             <div class="linha-campos">
                 <div class="campo">
                     <label for="valor-min">Valor mínimo (R$)</label>
@@ -188,9 +208,11 @@
                 </div>
             </div>
 
+            <!-- mensagens de erro e sucesso: começam escondidas (hidden) e o JavaScript mostra quando preciso -->
             <p class="erro" id="erro" hidden></p>
             <p class="sucesso" id="sucesso" hidden>Projeto publicado com sucesso!</p>
 
+            <!-- Cancelar volta à home; o outro botão envia o formulário -->
             <div class="acoes-form">
                 <a href="home.html" class="btn-cancelar">Cancelar</a>
                 <button type="submit" class="btn-buscar">Publicar projeto</button>
@@ -200,14 +222,17 @@
     </main>
 
     <script>
+        // elementos da página que o script usa
         const form = document.getElementById('form-publicar');
         const erro = document.getElementById('erro');
         const sucesso = document.getElementById('sucesso');
 
+        // ao enviar o formulário (os campos "required" já foram conferidos pelo navegador)
         form.addEventListener('submit', function (e) {
-            e.preventDefault();
+            e.preventDefault(); // impede o envio de verdade: nada é salvo, é só uma simulação
             sucesso.hidden = true;
 
+            // regra extra: o valor máximo não pode ser menor que o mínimo
             const min = Number(form['valor-min'].value);
             const max = Number(form['valor-max'].value);
             if (max < min) {
@@ -216,6 +241,7 @@
                 return;
             }
 
+            // tudo certo: esconde o erro, mostra o sucesso e limpa os campos
             erro.hidden = true;
             sucesso.hidden = false;
             form.reset();

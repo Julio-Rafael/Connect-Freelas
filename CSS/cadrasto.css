@@ -1,10 +1,12 @@
 /* estilos só da página de cadastro (paleta e cabeçalho vêm do geral.css) */
 
+/* área principal da página, com a margem lateral padrão do site */
 main {
     padding: 32px var(--margem) 48px;
     font-family: Arial, sans-serif;
 }
 
+/* cartão branco do formulário, centralizado e com largura máxima */
 .cadastro {
     max-width: 520px;
     margin: 0 auto;
@@ -15,6 +17,7 @@ main {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
+/* título e subtítulo do cartão */
 .cadastro h1 {
     font-size: 26px;
     color: var(--text-primary);
@@ -27,6 +30,7 @@ main {
     margin-bottom: 18px;
 }
 
+/* cada campo do formulário: rótulo em cima, caixa de texto embaixo */
 .campo {
     display: flex;
     flex-direction: column;
@@ -50,12 +54,14 @@ main {
     color: var(--text-primary);
 }
 
+/* campo selecionado: borda azul e brilho suave para mostrar onde está digitando */
 .campo input:focus {
     outline: none;
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
+/* texto dos termos de uso, com os links sublinhados */
 .termos {
     padding: 10px 0;
     font-size: 13px;
@@ -72,6 +78,7 @@ main {
     color: var(--primary-hover);
 }
 
+/* botão de enviar: largura total do formulário */
 .form-cadastro button[type="submit"] {
     width: 100%;
     height: 44px;

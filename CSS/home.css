@@ -13,6 +13,7 @@
     --sombra: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
+/* área principal: espaço em cima/embaixo e margem lateral padrão do site */
 main {
     padding: 16px var(--margem);
 }
@@ -26,6 +27,7 @@ main {
     margin: 16px 0;
 }
 
+/* botão "Buscar" azul, ao lado da caixa de busca */
 .btn-buscar {
     height: 40px;
     padding: 0 20px;
@@ -42,6 +44,7 @@ main {
     background: var(--azul-escuro);
 }
 
+/* caixa de busca: lupa + campo de texto dentro de uma borda arredondada */
 .Buscar {
     flex: 0 1 380px;
     display: flex;
@@ -56,6 +59,7 @@ main {
     color: var(--texto-suave);
 }
 
+/* quando o campo de dentro está selecionado, a caixa toda ganha um brilho */
 .Buscar:focus-within {
     border-color: #000;
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.15);
@@ -67,6 +71,7 @@ main {
     flex-shrink: 0;
 }
 
+/* o input ocupa o espaço restante e fica sem borda própria (a borda é da caixa) */
 .Buscar input {
     flex: 1;
     background: transparent;
@@ -85,6 +90,7 @@ main {
     margin-top: 32px;
 }
 
+/* título da seção à esquerda e link "ver todos" à direita */
 .projetos-topo {
     display: flex;
     justify-content: space-between;
@@ -109,12 +115,14 @@ main {
     text-decoration: underline;
 }
 
+/* grade de cards: quantas colunas couberem (mínimo 230px cada), com espaço de 16px */
 .lista-projetos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 16px;
 }
 
+/* card de projeto: caixa branca arredondada com imagem em cima e texto embaixo */
 .card-projeto {
     display: flex;
     flex-direction: column;
@@ -126,6 +134,7 @@ main {
     font-family: Arial, sans-serif;
 }
 
+/* faixa colorida do topo do card (position: relative para a etiqueta ficar posicionada dentro dela) */
 .card-imagem {
     position: relative;
     height: 130px;
@@ -140,6 +149,7 @@ main {
 .cat-ti     { background: linear-gradient(135deg, #1E3A8A, #3B82F6); }
 .cat-trad   { background: linear-gradient(135deg, #16A34A, #4ADE80); }
 
+/* etiqueta (badge) com o nome da categoria, no canto inferior esquerdo da imagem */
 .card-categoria {
     position: absolute;
     left: 10px;
@@ -151,6 +161,7 @@ main {
     font-size: 12px;
 }
 
+/* parte de texto do card: título, descrição e rodapé */
 .card-corpo {
     display: flex;
     flex-direction: column;
@@ -171,6 +182,7 @@ main {
     margin-bottom: 14px;
 }
 
+/* rodapé do card: autor à esquerda e prazo à direita, sempre colado embaixo */
 .card-rodape {
     display: flex;
     justify-content: space-between;
@@ -187,6 +199,7 @@ main {
     font-weight: bold;
 }
 
+/* foto/ícone redondo do autor */
 .avatar {
     width: 28px;
     height: 28px;
@@ -204,6 +217,7 @@ main {
     height: 18px;
 }
 
+/* prazo do projeto: ícone de relógio + texto */
 .card-prazo {
     display: flex;
     align-items: center;
@@ -234,6 +248,7 @@ main {
     box-shadow: var(--sombra);
 }
 
+/* título e descrição ocupam só metade do banner para não cobrir a foto */
 .topo-home h1 {
     max-width: 52%;
     font-size: clamp(24px, 3.4vw, 38px);
@@ -258,6 +273,7 @@ main {
     background: #fff;
 }
 
+/* telas pequenas: banner com altura livre e textos usando a largura toda */
 @media (max-width: 800px) {
     .topo-home {
         aspect-ratio: auto;

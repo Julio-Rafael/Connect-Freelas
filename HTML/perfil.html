@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConectaFreelas - Meu perfil profissional</title>
+    <!-- ícone da aba do navegador -->
     <link rel="icon" type="image/x-icon" href="../Imagems/favicon.ico">
+    <!-- geral.css: base e cabeçalho comuns; perfil.css: estilos só desta página -->
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="../CSS/perfil.css">
 </head>
@@ -13,7 +15,9 @@
 <body>
 
 
+    <!-- cabeçalho (igual ao da home): linha de cima com logo e ações, linha de baixo com o menu -->
     <header>
+        <!-- linha de cima: logo à esquerda; publicar, notificações e perfil à direita -->
         <div class="cabecalho-pagina">
             <div class="logo">
                 <figure>
@@ -25,6 +29,7 @@
 
 
             <div class="acoes">
+                <!-- botão que leva ao formulário de publicar projeto -->
                 <a href="publicar.html" class="btn-publicar">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" aria-hidden="true">
@@ -33,6 +38,7 @@
                     Publicar projeto
                 </a>
 
+                <!-- sino de notificações (ainda sem função) -->
                 <button type="button" class="btn-notificacoes" aria-label="Notificações">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" aria-hidden="true">
@@ -41,6 +47,7 @@
                     </svg>
                 </button>
 
+                <!-- ícone redondo do perfil (esta é a própria página) -->
                 <a href="perfil.html" class="btn-perfil" aria-label="Perfil">
                     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                         <circle cx="12" cy="8" r="4" />
@@ -50,10 +57,12 @@
             </div>
         </div>
 
+        <!-- linha de baixo: menu de navegação (os <hr> são as divisórias verticais entre os links) -->
         <div class="barra-menu">
             <div class="menu">
                 <nav>
                     <ul>
+                        <!-- Início -->
                         <li>
                             <a href="home.html" class="inicio-item">
                                 <svg class="icone-inicio" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -67,6 +76,7 @@
                             </a>
                         </li>
                         <hr>
+                        <!-- Explorar -->
                         <li>
                             <a href="explorar.html" class="explorar-item">
                                 <svg class="icon-explorar" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -82,6 +92,7 @@
 
                         <hr>
 
+                        <!-- Meus Projetos (página meusprojetos.html ainda não existe) -->
                         <li>
                             <a href="meusprojetos.html" class="projetos-item">
                                 <svg class="icon-projetos" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -97,6 +108,7 @@
 
                         <hr>
 
+                        <!-- Mensagens (página mensagens.html ainda não existe) -->
                         <li>
                             <a href="mensagens.html" class="mensagem-item">
                                 <svg class="icon-mensagem" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -110,6 +122,7 @@
                             </a>
                         </li>
                         <hr>
+                        <!-- Favoritos (página favoritos.html ainda não existe) -->
                         <li>
                             <a href="favoritos.html" class="favoritos-item">
                                 <svg class="icon-favoritos" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -131,10 +144,12 @@
 
     <main>
 
+        <!-- cartão do topo do perfil: avatar + nome, cargo, cidade e status -->
         <div class="perfil-cabecalho">
             <div class="container perfil-topo">
 
 
+                <!-- avatar: círculo azul com a silhueta de uma pessoa (desenhado em SVG) -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none"
                     stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
 
@@ -146,6 +161,7 @@
                 </svg>
 
 
+                <!-- dados da pessoa (fictícios por enquanto) -->
                 <div class="perfil-dados">
                     <h1>Julio Rafael</h1>
                     <p class="cargo">Desenvolvedor Web</p>
@@ -157,10 +173,12 @@
         </div>
 
 
+        <!-- conteúdo em duas colunas (no celular vira uma só) -->
         <section>
             <div class="container detalhe">
 
 
+                <!-- coluna da esquerda (mais larga): descrição e habilidades -->
                 <div class="coluna">
                     <div class="card card-sobre">
                         <h2 class="titulo-sobre">Sobre</h2>
@@ -171,6 +189,7 @@
                             dentro do prazo.</p>
 
                         <h3>Habilidades <a href="#" class="editar">Editar</a></h3>
+                        <!-- cada habilidade é uma etiqueta (tag); o "+" indica que dá para adicionar mais -->
                         <div class="habilidades">
                             <span class="tag">HTML</span>
                             <span class="tag">CSS</span>
@@ -185,7 +204,9 @@
                     </div>
                 </div>
 
+                <!-- coluna da direita: informações básicas e links -->
                 <div class="coluna">
+                    <!-- aside = conteúdo complementar. dl/dt/dd = lista de pares nome (dt) e valor (dd) -->
                     <aside class="card resumo">
                         <h2>Informações Básicas <a href="#" class="editar">Editar</a></h2>
                         <dl>
@@ -208,6 +229,7 @@
                         </dl>
                     </aside>
 
+                    <!-- links externos (href="#" = ainda sem destino real) -->
                     <div class="card">
                         <h2>Links Profissionais <a href="#" class="editar">Editar</a></h2>
                         <ul class="links">
@@ -223,6 +245,7 @@
     </main>
 
 
+    <!-- rodapé: links rápidos (vagas.html e sobre.html ainda não existem) e direitos autorais -->
     <footer>
         <div class="container">
             <nav>

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConnectFreelas</title>
+    <!-- ícone da aba do navegador -->
     <link rel="icon" type="image/x-icon" href="../Imagems/favicon.ico">
+    <!-- geral.css: paleta, reset e cabeçalho comuns; home.css: estilos só desta página (cards e busca) -->
     <link rel="stylesheet" href="../CSS/geral.css">
     <link rel="stylesheet" href="../CSS/home.css">
 </head>
@@ -14,7 +16,9 @@
 
 
 
+    <!-- cabeçalho (repetido nas páginas internas): linha de cima com logo e ações, linha de baixo com o menu -->
     <header>
+        <!-- linha de cima: logo à esquerda; publicar, notificações e perfil à direita -->
         <div class="cabecalho-pagina">
             <div class="logo">
                 <figure>
@@ -26,6 +30,7 @@
 
 
             <div class="acoes">
+                <!-- botão que leva ao formulário de publicar projeto -->
                 <a href="publicar.html" class="btn-publicar">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" aria-hidden="true">
@@ -34,6 +39,7 @@
                     Publicar projeto
                 </a>
 
+                <!-- sino de notificações (ainda sem função); aria-label dá nome ao botão para leitores de tela -->
                 <button type="button" class="btn-notificacoes" aria-label="Notificações">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" aria-hidden="true">
@@ -42,6 +48,7 @@
                     </svg>
                 </button>
 
+                <!-- ícone redondo que leva ao perfil -->
                 <a href="perfil.html" class="btn-perfil" aria-label="Perfil">
                     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                         <circle cx="12" cy="8" r="4" />
@@ -51,10 +58,12 @@
             </div>
         </div>
 
+        <!-- linha de baixo: menu de navegação (os <hr> são as divisórias verticais entre os links) -->
         <div class="barra-menu">
             <div class="menu">
                 <nav>
                     <ul>
+                        <!-- Início -->
                         <li>
                             <a href="home.html" class="inicio-item">
                                 <svg class="icone-inicio" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -68,6 +77,7 @@
                             </a>
                         </li>
                         <hr>
+                        <!-- Explorar -->
                         <li>
                             <a href="explorar.html" class="explorar-item">
                                 <svg class="icon-explorar" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -83,6 +93,7 @@
 
                         <hr>
 
+                        <!-- Meus Projetos (página meusprojetos.html ainda não existe) -->
                         <li>
                             <a href="meusprojetos.html" class="projetos-item">
                                 <svg class="icon-projetos" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -98,6 +109,7 @@
 
                         <hr>
 
+                        <!-- Mensagens (página mensagens.html ainda não existe) -->
                         <li>
                             <a href="mensagens.html" class="mensagem-item">
                                 <svg class="icon-mensagem" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -111,6 +123,7 @@
                             </a>
                         </li>
                         <hr>
+                        <!-- Favoritos (página favoritos.html ainda não existe) -->
                         <li>
                             <a href="favoritos.html" class="favoritos-item">
                                 <svg class="icon-favoritos" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -129,16 +142,19 @@
 
     </header>
 
+    <!-- conteúdo da página, abaixo do cabeçalho -->
     <div class="conteudo">
 
 
 
         <main>
 
+            <!-- banner de boas-vindas com título e busca -->
             <div class="topo-home">
                 <h1>Conecte talentos a oportunidades</h1>
                 <p>Encontre projetos para o seu talento ou publique o que você precisa. Tudo em um só lugar.</p>
 
+                <!-- busca: envia o termo (name="q") para o Explorar, que lê "?q=termo" na URL e filtra os projetos -->
                 <form class="busca-linha" action="explorar.html" method="get">
                     <div class="Buscar">
                         <svg class="icone-busca" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -153,6 +169,9 @@
                 </form>
             </div>
 
+    <!-- seção "Projetos em Destaque": 4 cards.
+         cada card: faixa colorida com a categoria (classe cat-...), título, descrição,
+         e rodapé com faixa de valor (R$) e prazo -->
     <section class="projetos">
         <div class="projetos-topo">
             <h2>Projetos em Destaque</h2>
@@ -252,6 +271,7 @@
         </div>
     </section>
 
+    <!-- seção "Projetos Recentes": 4 cards, mesma estrutura da seção anterior -->
     <section class="projetos">
         <div class="projetos-topo">
             <h2>Projetos Recentes</h2>

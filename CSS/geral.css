@@ -29,18 +29,21 @@
     --margem: clamp(16px, 6vw, 96px);
 }
 
+/* reset: zera margens/espaçamentos do navegador e faz width/height incluírem padding e borda */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* fundo cinza claro e cor de texto padrão de todas as páginas */
 body {
     background-color: var(--cinza_claro);
     color: var(--text-primary);
 }
 
 /* ---------- cabeçalho ---------- */
+/* faixa do cabeçalho: cor de fundo (--cor-header) e margem lateral igual à do resto da página */
 header {
     padding-left: var(--margem);
     padding-right: var(--margem);
@@ -48,6 +51,7 @@ header {
     border-bottom: 1px solid rgb(66, 72, 84);
 }
 
+/* linha de cima: logo à esquerda e ações à direita */
 header .cabecalho-pagina {
     display: flex;
     align-items: center;
@@ -55,6 +59,7 @@ header .cabecalho-pagina {
     width: 100%;
 }
 
+/* logo: tira a margem padrão do figure e fixa a largura da imagem */
 header .logo figure {
     margin: 0;
 }
@@ -74,6 +79,7 @@ header .acoes {
     gap: 40px;
 }
 
+/* botões do cabeçalho (ex.: notificações): sem borda nem fundo, só o ícone */
 header .acoes button {
     display: flex;
     align-items: center;
@@ -90,6 +96,7 @@ header .acoes button {
     height: 26px;
 }
 
+/* botão do perfil: círculo colorido com o ícone da pessoa dentro */
 .btn-perfil {
     display: flex;
     align-items: center;
@@ -108,7 +115,7 @@ header .acoes button {
     height: 28px;
 }
 
-/* menu deitado */
+/* menu deitado: links de navegação à esquerda e botão "Publicar projeto" à direita */
 header .barra-menu {
     display: flex;
     align-items: center;
@@ -123,6 +130,7 @@ header nav ul {
     padding: 12px 0;
 }
 
+/* lista de links na horizontal; o hr vira uma divisória vertical entre eles */
 header nav ul hr {
     height: 22px;
     margin: 0 18px;
@@ -137,6 +145,7 @@ header nav ul li {
     line-height: 1.5;
 }
 
+/* cada link do menu: ícone + texto lado a lado */
 .inicio-item,
 .explorar-item,
 .projetos-item,
@@ -149,6 +158,7 @@ header nav ul li {
     text-decoration: none;
 }
 
+/* tamanho padrão dos ícones do menu */
 .icone-inicio,
 .icon-explorar,
 .icon-projetos,
