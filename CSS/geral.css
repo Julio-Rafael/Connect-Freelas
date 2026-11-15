@@ -90,10 +90,6 @@ header .acoes button {
     height: 26px;
 }
 
-.btn-notificacoes:hover {
-    color: var(--primary);
-}
-
 .btn-perfil {
     display: flex;
     align-items: center;
@@ -151,14 +147,6 @@ header nav ul li {
     gap: 14px;
     color: #E2E8F0;
     text-decoration: none;
-}
-
-.inicio-item:hover,
-.explorar-item:hover,
-.projetos-item:hover,
-.mensagem-item:hover,
-.favoritos-item:hover {
-    color: var(--primary);
 }
 
 .icone-inicio,
