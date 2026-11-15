@@ -7,8 +7,8 @@ main {
 
 .container {
     width: 100%;
-    max-width: 1136px;
-    margin: 0 auto;
+    max-width: none;
+    margin: 0;
 }
 
 /* ---------- topo do perfil ---------- */
@@ -17,13 +17,15 @@ main {
     border: 1px solid var(--border-color);
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
-    border-top: 4px solid var(--primary);
 }
 
 .perfil-topo {
     display: flex;
     align-items: center;
-    gap: 24px;
+    justify-content: flex-start;
+    gap: 16px;
+    max-width: none;
+    margin: 0;
     padding: 24px;
 }
 
@@ -256,12 +258,24 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 
-    .perfil-topo {
-        flex-direction: column;
-        text-align: center;
-    }
+}
 
-    .perfil-dados p {
-        justify-content: center;
-    }
+/* card "Sobre": descrição e habilidades juntas */
+.titulo-sobre {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 20px;
+}
+
+.card-sobre h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0 10px;
+    font-size: 16px;
+    color: var(--text-primary);
+}
+
+main > section {
+    margin-top: 24px;
 }
