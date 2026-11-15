@@ -82,7 +82,7 @@ a {
     text-align: center;
     color: #fff;
     background:
-        linear-gradient(rgba(10, 17, 34, 0.72), rgba(10, 17, 34, 0.8)),
+        linear-gradient(rgba(30, 32, 38, 0.72), rgba(30, 32, 38, 0.8)),
         url("../Imagems/Colaboração em equipe no escritório.png") center / cover no-repeat;
 }
 
@@ -146,7 +146,7 @@ a {
 .btn-azul {
     background: var(--primary);
     color: #fff;
-    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 .btn-azul:hover {
@@ -207,7 +207,7 @@ a {
     background: #fff;
     border: 1px solid var(--borda);
     border-radius: var(--raio);
-    box-shadow: 0 2px 8px rgba(31, 42, 55, 0.06);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .passo-num {
@@ -278,7 +278,7 @@ a {
     color: #fff;
     border-radius: 20px;
     background:
-        radial-gradient(ellipse 60% 80% at 50% 0%, rgba(37, 99, 235, 0.5), transparent 70%),
+        radial-gradient(ellipse 60% 80% at 50% 0%, rgba(255, 255, 255, 0.12), transparent 70%),
         var(--fundo-escuro);
 }
 

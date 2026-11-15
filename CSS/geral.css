@@ -23,7 +23,7 @@
     --cinza_claro: rgb(230, 227, 227);
 
     /* cor do cabeçalho */
-    --cor-header: #0F172A;
+    --cor-header: rgb(49, 54, 64);
 
     /* distância da borda: cresce com a tela (mín 16px, máx 96px) */
     --margem: clamp(16px, 6vw, 96px);
@@ -45,7 +45,7 @@ header {
     padding-left: var(--margem);
     padding-right: var(--margem);
     background: var(--cor-header);
-    border-bottom: 1px solid #1E293B;
+    border-bottom: 1px solid rgb(66, 72, 84);
 }
 
 header .cabecalho-pagina {

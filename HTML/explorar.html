@@ -216,9 +216,6 @@
             <article class="card-projeto">
                 <div class="card-imagem cat-${p.cat}">
                     <span class="card-categoria">${nomes[p.cat]}</span>
-                    <button type="button" class="btn-salvar" aria-label="Salvar projeto">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z" /></svg>
-                    </button>
                 </div>
                 <div class="card-corpo">
                     <h3>${p.titulo}</h3>
@@ -263,11 +260,6 @@
         document.getElementById('ordem').addEventListener('change', e => {
             estado.ordem = e.target.value;
             render();
-        });
-
-        lista.addEventListener('click', e => {
-            const b = e.target.closest('.btn-salvar');
-            if (b) b.classList.toggle('salvo');
         });
 
         // busca vinda da home (explorar.html?q=termo)

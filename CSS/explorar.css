@@ -102,15 +102,6 @@
     color: var(--texto-suave);
 }
 
-/* projeto salvo */
-.btn-salvar.salvo {
-    color: #a78bfa;
-}
-
-.btn-salvar.salvo svg {
-    fill: currentColor;
-}
-
 /* poucos resultados: cards mantêm o tamanho normal */
 #lista {
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
